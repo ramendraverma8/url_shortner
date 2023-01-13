@@ -1,0 +1,61 @@
+.google {
+    text-align: center;
+    margin: auto
+    
+}
+
+.google h1 {
+    color:rgb(173, 48, 29);
+}
+
+.google p {
+    color: black
+}
+
+.login {
+    text-align: center;
+}
+
+.logged {
+   padding: 2rem;
+}
+
+.logged p {
+    font-size: large;
+    color:rgb(64, 39, 88);
+    font-weight: bold;
+    font-style:initial;
+    
+}
+
+
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style:lower-roman;
+    margin-right: 1rem;
+}  
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.2rem o.6rem;
+    position: relative;
+}
+nav ul li a::selection{
+    color: black;
+}
+nav ul li a::before{
+    content: "";
+    position: absolute;
+    top: 21px;
+    left: 50%;
+    height: 3px;
+    width: 0%;
+    transform: translateX(-50%);
+    background-color: black;
+
+}
+ 
