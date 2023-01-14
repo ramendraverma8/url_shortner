@@ -1,11 +1,12 @@
 import { Fragment, React, useEffect, useState } from "react";
 import { gapi } from "gapi-script";
 import GoogleLogin from "react-google-login";
-import { Navbar } from "react-bootstrap";
+// import { Navbar } from "react-bootstrap";
 import Card from "../UI/Card";
 import classes from "./Google.module.css";
 import Button from "../UI/Button";
 import Home from "../Pages/Home";
+import Navbar from "../Navbar";
 
 const clientId =
   "809515788873-8h36j161t9rktleeinj0ua7f39t98pfm.apps.googleusercontent.com";
@@ -38,15 +39,22 @@ function Google(props) {
 
   return (
     <>
-      <Navbar bg="dark" expand="lg" >
-                <nav>
-                    <ul>
-                      <li><a>abcd</a></li>
-                      <li><a>edniek</a></li>
-                    </ul>
-                </nav>
-      </Navbar>
-
+    <Navbar></Navbar>
+      {/* <Navbar bg="dark" variant="dark">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/about">About</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+        <Navbar.Brand className="justify-content-end" href="#home">URL Shortener</Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse className="justify-content-end">
+          <Navbar.Text>
+            Signed in as: <a href="#login">{profile.name}</a>
+          </Navbar.Text>
+          <Button onClick={logOutHandler}>Log Out</Button>
+        </Navbar.Collapse>
+      </Navbar> */}
       <Card>
         {profile && (
           <>
